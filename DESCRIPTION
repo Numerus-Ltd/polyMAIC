@@ -1,0 +1,19 @@
+Package: polyMAIC
+Title: Polynomial Non-linear Optimisation Method for the Calculation of Weights for a MAIC Analysis.
+Version: 0.0.0.9000
+Authors@R: 
+    person("Numerus", "Ltd.", , "polymaic@numerus.com", role = c("aut", "cre"))
+Description: The polyMAIC package has been developed to demonstrate a polynomial non-linear optimisation framework for matching-adjusted indirect comparison (MAIC) as proposed by Alsop et al. 
+License: `use_mit_license()`
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Depends: 
+    R (>= 4.4.2),
+    nloptr (>= 2.0.3) ,
+    Hmisc (>= 5.2-2) ,
+    tictoc (>= 1.1) ,
+    haven (>= 2.5.3) ,
+    stringr (>= 1.5.0) ,
+    ggplot2 (>= 3.5.1) 
+LazyData: true
