@@ -131,11 +131,12 @@ polymaic <- function(IPD, VARSTAT, TARGS, TOLS, TYPE, COEFBOUND=5000, ID="USUBJI
                               gr = grad_ess,
                               lower = LOWER,
                               upper = UPPER,
-                              hin = g_minus,
-                              hinjac = grad_g_minus,
+                              hin = g,
+                              hinjac = grad_g,
                               control = list( "xtol_rel"= 1.0e-14,
                                               "ftol_rel"= 1.0e-14,
-                                              "maxeval"= 5000)) ## call slsqp algorithm for nloptr pacakge
+                                              "maxeval"= 5000),
+                              deprecatedBehavior = FALSE) ## call slsqp algorithm for nloptr pacakge
 
   loc_time    <- toc() ## end timing and save for analytics
   loc_status  <- loc_result$convergence ## convergence status code (produced by nloptr package, see nloptr documentation)

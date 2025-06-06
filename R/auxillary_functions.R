@@ -242,19 +242,5 @@ grad_g <- function(BETA){
   return(out)
 }
 
-## Add the g_minus versions for certain algorithms
-
-g_minus <- function(BETA){
-  out <- g(BETA = BETA)
-  out2 <- -1 * out
-  return(out2)
-}
-
-grad_g_minus <- function(BETA){
-  out <- grad_g(BETA = BETA)
-  out2 <- -1 * out
-  return(out2)
-}
-
 ## END OF FILE ##
 
