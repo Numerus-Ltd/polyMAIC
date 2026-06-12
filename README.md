@@ -13,7 +13,7 @@ This package:
 ## Usage
 ### Installation  
 Install the development version using:
-remotes::install_github("Numerus Ltd/Polymaic")
+devtools::install_github("Numerus Ltd/polyMAIC")
 
 This package has not been uploaded to the CRAN repository. 
 
